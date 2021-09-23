@@ -11,9 +11,9 @@ To be able to run Node.js code we need to make sure that we have Node.js install
 
 After you have installed Node.js let's get started!
 
-In the current directory create a new file and call it `app.js`
+In the current directory create a new file and name it `app.js`
 
-To create a server there are some variables that we will need to create:
+To create a server there are some variables that we will need to instantiate:
 ```
 const http = require('http');
 
@@ -28,7 +28,7 @@ Following up we have this piece of code:
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Welcome to Re:Coded's backend bootcamp!');
+  res.end('Welcome to Re:Coded's backend Bootcamp!');
 });
 
 server.listen(port, hostname, () => {
