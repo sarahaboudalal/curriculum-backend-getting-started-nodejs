@@ -3,9 +3,9 @@ The objectives of this lesson are:
 1. Installing Node.js
 2. Creating our first Node.js server
 
-In the last module we got to know more about Node.js history and how it works, now let's go ahead and create our first Node.js server it's very simple!
+In the last module, we familiarized ourselves with Node.js history and how it works. Now, let's go ahead and create our first Node.js server -- it'll be simple!
 
-To be able to run Node.js code we need to make sure that we have Node.js installed on our local machine so please first follow these installation steps depending on your OS before we get started.
+To be able to run Node.js code, we need to make sure that we have Node.js installed on our local machine. Before we get started, please first follow these installation steps depending on your OS.
 
 NOTE: for windows users please follow these [steps](https://docs.microsoft.com/en-us/windows/wsl/install) to download WSL and then follow [this](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to install Node.js
 
@@ -37,7 +37,7 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 ```
-Now the HTTP module offers us a really strong method called `createServer` which turns your computer into an HTTP server that listens for incoming requests, as you can see we use the `server` variable later on with the method `listen` to listen for incoming requests with specific `port` and `hostname` which we have already declared before.
+The `http` module offers us a really powerful method called `createServer` which spawns a program running an HTTP server that listens for incoming requests. As you can see we use the `server` variable later on with the method `listen` to listen for incoming requests with specific `port` and `hostname` that we have already declared before.
 
 Now, let's test our server by running the following command:
 
