@@ -7,7 +7,9 @@ In the last module we got to know more about Node.js history and how it works, n
 
 To be able to run Node.js code we need to make sure that we have Node.js installed on our local machine so please first follow these installation steps depending on your OS before we get started.
 
-[Node.js Installtion](https://nodejs.org/en/download/)
+NOTE: for windows users please follow these [steps](https://docs.microsoft.com/en-us/windows/wsl/install) to download WSL and then follow [this](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to install Node.js
+
+[Node.js Installtion for Mac and Linux users](https://nodejs.org/en/download/)
 
 After you have installed Node.js let's get started!
 
@@ -45,8 +47,8 @@ Visit `http://localhost:3000` and you will see a message saying "Welcome to Re:C
 
 Congratualtions you have just built your first Node.js server!
 
-<img src="https://thumbs.gfycat.com/GargantuanOffbeatCockatoo-size_restricted.gif" width="400" height="400" />
+<img src="https://thumbs.gfycat.com/GargantuanOffbeatCockatoo-size_restricted.gif" width="300" height="200" />
 
-## Referecnes
+## References
 - [Node.js getting started](https://nodejs.org/en/docs/guides/getting-started-guide/)
 - [http.createServer()](https://www.w3schools.com/nodejs/met_http_createserver.asp)
