@@ -12,7 +12,7 @@ To be able to run Node.js code, we need to make sure that we have Node.js instal
 2. Follow [this](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to install Node.js
 
 ## Linux and Mac
-1. [Node.js Installation for Mac and Linux users](https://nodejs.org/en/download/)
+1. [Node.js Installation](https://nodejs.org/en/download/)
 
 After you have installed Node.js let's get started!
 
