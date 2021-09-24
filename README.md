@@ -9,7 +9,7 @@ To be able to run Node.js code we need to make sure that we have Node.js install
 
 NOTE: for windows users please follow these [steps](https://docs.microsoft.com/en-us/windows/wsl/install) to download WSL and then follow [this](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to install Node.js
 
-[Node.js Installtion for Mac and Linux users](https://nodejs.org/en/download/)
+[Node.js Installation for Mac and Linux users](https://nodejs.org/en/download/)
 
 After you have installed Node.js let's get started!
 
@@ -39,13 +39,13 @@ server.listen(port, hostname, () => {
 ```
 Now the HTTP module offers us a really strong method called `createServer` which turns your computer into an HTTP server that listens for incoming requests, as you can see we use the `server` variable later on with the method `listen` to listen for incoming requests with specific `port` and `hostname` which we have already declared before.
 
-Now, lets test our server by running the following command:
+Now, let's test our server by running the following command:
 
 `node app.js`
 
 Visit `http://localhost:3000` and you will see a message saying "Welcome to Re:Coded's backend Bootcamp!".
 
-Congratualtions you have just built your first Node.js server!
+Congratulations you have just built your first Node.js server!
 
 <img src="https://thumbs.gfycat.com/GargantuanOffbeatCockatoo-size_restricted.gif" width="300" height="200" />
 
