@@ -43,11 +43,11 @@ Now, let's test our server by running the following command:
 
 `node app.js`
 
-Visit `http://localhost:3000` and you will see a message saying "Welcome to Re:Coded's backend Bootcamp!".
+Visit `http://localhost:3000`, and you will see a message saying "Welcome to Re:Coded's backend Bootcamp!".
 
 Congratulations you have just built your first Node.js server!
 
-<img src="https://thumbs.gfycat.com/GargantuanOffbeatCockatoo-size_restricted.gif" width="300" height="200" />
+![Wow gif](/assets/wow.gif)
 
 ## References
 - [Node.js getting started](https://nodejs.org/en/docs/guides/getting-started-guide/)
