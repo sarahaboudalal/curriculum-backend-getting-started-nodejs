@@ -14,6 +14,7 @@ To be able to run Node.js code, we need to make sure that we have Node.js instal
 ## Linux and Mac
 1. [Node.js Installation](https://nodejs.org/en/download/)
 
+## Getting started
 After you have installed Node.js let's get started!
 
 In the current directory create a new file and name it `app.js`
