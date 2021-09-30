@@ -4,7 +4,8 @@
   "description": "The objectives of this lesson are: 1. Installing Node.js 2. Creating our first Node.js server",
   "main": "app.js",
   "scripts": {
-    "test": "mocha ./tests"
+    "test": "mocha ./tests",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

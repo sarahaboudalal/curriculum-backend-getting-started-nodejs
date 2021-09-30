@@ -34,7 +34,7 @@ Following up we have this piece of code:
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Welcome to Re:Coded's backend Bootcamp!');
+  res.end("Welcome to Re:Coded's backend Bootcamp!");
 });
 
 server.listen(port, hostname, () => {
@@ -52,6 +52,15 @@ Visit `http://localhost:3000`, and you will see a message saying "Welcome to Re:
 Congratulations you have just built your first Node.js server!
 
 ![Wow gif](/assets/wow.gif)
+
+
+## Practice time
+Now it's time for you to work alone! and create your first GET request.
+
+Make sure to run `npm install` to install the needed package to run the tests.
+
+### Requirments
+For this section you will be creating a GET request to the `/practice` endpoint, your server should return `Practice is done!` whenever `http://localhost:3000/practice` is visited.
 
 ## References
 - [Node.js getting started](https://nodejs.org/en/docs/guides/getting-started-guide/)
