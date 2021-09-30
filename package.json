@@ -1,0 +1,24 @@
+{
+  "name": "curriculum-backend-getting-started-nodejs",
+  "version": "1.0.0",
+  "description": "The objectives of this lesson are: 1. Installing Node.js 2. Creating our first Node.js server",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReCoded-Org/curriculum-backend-getting-started-nodejs.git"
+  },
+  "author": "Re:Coded",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReCoded-Org/curriculum-backend-getting-started-nodejs/issues"
+  },
+  "homepage": "https://github.com/ReCoded-Org/curriculum-backend-getting-started-nodejs#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2",
+    "supertest": "^6.1.6"
+  }
+}
