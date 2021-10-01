@@ -20,7 +20,7 @@ After you have installed Node.js let's get started!
 In the current directory create a new file and name it `app.js`
 
 To create a server there are some variables that we will need to instantiate:
-```
+```js
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -30,7 +30,7 @@ We `require` the HTTP module that we will use to listen for incoming requests, w
 
 Following up we have this piece of code:
 
-```
+```js
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
