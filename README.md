@@ -9,14 +9,25 @@ To be able to run Node.js code, we need to make sure that we have Node.js instal
 
 ## Windows
 To work around some of the differences between machines, and specifically between operating systems, we recommend that all students whose computers come pre-installed with the Windows operating system use a tool called Windows Subsystem for Linux (WSL). Windows Subsystem for Linux provides a Linux-based environment for interfacing with and developing on a Windows operating system. We recommend using Ubuntu, the default installed Linux distribution by WSL.
-1. Please follow these [steps](https://docs.microsoft.com/en-us/windows/wsl/install) to download WSL
-2. Follow [this](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to install Node.js
+1. Follow these [steps](https://docs.microsoft.com/en-us/windows/wsl/install) to install WSL.
+2. Follow [this](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to install Node.js, nvm and npm.
+3. Follow [these steps](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl#install-visual-studio-code) in to install Visual Studio Code, which is the code editor we will be using.
+4. Follow [these steps](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git) to setup and configure Git on your local machine.
 
 ## Linux and Mac
-1. [Node.js Installation](https://nodejs.org/en/download/)
+1. Follow [this page](https://nodejs.org/en/download/) to install Node.js and npm.
+2. Follow [these steps](https://code.visualstudio.com/download) in to install Visual Studio Code, which is the code editor we will be using.
+3. Follow [these steps](https://git-scm.com/downloads) to setup and configure Git on your local machine.
 
-## Getting started
-After you have installed Node.js let's get started!
+### Confirm setup
+We recommend using the latest stable versions of Node.js and npm. To confirm your installation, run the commands ```node --version``` and ```npm --version``` on your terminal. If you see Node.js version 14 and npm version 6, then you are good to go!
+
+## Getting Started
+After you have installed Node.js, let's get started! First and foremost, we recommend creating a dedicated space for the course assignments on your computer. This could be a folder called "Assignments" in a location on your computer that you can easily access.
+
+1. Open your terminal and navigate to your dedicated assignments folder.
+2. Then [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repo on your local machine.
+3. Now open the assignment folder on VSCode.
 
 In the current directory create a new file and name it `app.js`
 
@@ -27,28 +38,28 @@ const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
 ```
-We `require` the HTTP module that we will use to listen for incoming requests, we declare our hostname variable and the port number that we will use.
+We `require` the in-built HTTP module of Node.js to create our server and listen for incoming requests. We declare our hostname and port number for our server.
 
-Following up we have this piece of code:
+Now we have this following piece of code to create our server:
 
 ```js
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end("Welcome to Re:Coded's backend Bootcamp!");
+  res.end("Welcome to Re:Coded's Backend Bootcamp!");
 });
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 ```
-The `http` module offers us a really powerful method called `createServer` that spawns a program running an HTTP server that listens for incoming requests. As you can see we use the `server` variable later on with the method `listen` to listen for incoming requests with specific `port` and `hostname` that we have already declared before.
+The `http` module offers us a really powerful method called `createServer` that spawns a program running an HTTP server listening for incoming requests. As you can see we use the `server` variable with the method `listen` to listen for incoming requests on the specific `port` and `hostname` that we have already declared before.
 
-Now, let's test our server by running the following command:
+Now, let's run our server by running the following command on the terminal:
 
 ```npm start```
 
-Visit `http://localhost:3000`, and you will see a message saying "Welcome to Re:Coded's backend Bootcamp!".
+Visit `http://localhost:3000` on your browser, and you will see a message saying "Welcome to Re:Coded's Backend Bootcamp!".
 
 Congratulations! You have just built your first Node.js server.
 
