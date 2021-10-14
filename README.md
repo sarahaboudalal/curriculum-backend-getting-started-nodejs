@@ -1,13 +1,14 @@
-# Getting started with Node.js
-The objectives of this lesson are:
-1. Installing Node.js
+# Getting Started with Node.js
+The objectives of this assignment are:
+1. Installing Node.js and preparing our local environment
 2. Creating our first Node.js server
 
-In the last module, we familiarized ourselves with Node.js history and how it works. Now, let's go ahead and create our first Node.js server -- it'll be simple!
+In the last lesson, we familiarized ourselves with Node.js history and how it works. We also took a look at some basic Node.js code. Now, let's go ahead and create our first Node.js server -- it'll be simple!
 
-To be able to run Node.js code, we need to make sure that we have Node.js installed on our local machine. Before we get started, please first follow these installation steps depending on your OS.
+To be able to run Node.js code, we need to make sure that we have Node.js installed on our local machine. Before we get started, please follow these installation steps depending on your OS.
 
 ## Windows
+To work around some of the differences between machines, and specifically between operating systems, we recommend that all students whose computers come pre-installed with the Windows operating system use a tool called Windows Subsystem for Linux (WSL). Windows Subsystem for Linux provides a Linux-based environment for interfacing with and developing on a Windows operating system. We recommend using Ubuntu, the default installed Linux distribution by WSL.
 1. Please follow these [steps](https://docs.microsoft.com/en-us/windows/wsl/install) to download WSL
 2. Follow [this](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to install Node.js
 
@@ -45,22 +46,25 @@ The `http` module offers us a really powerful method called `createServer` that 
 
 Now, let's test our server by running the following command:
 
-`node app.js`
+```npm start```
 
 Visit `http://localhost:3000`, and you will see a message saying "Welcome to Re:Coded's backend Bootcamp!".
 
-Congratulations you have just built your first Node.js server!
+Congratulations! You have just built your first Node.js server.
 
 ![Wow gif](/assets/wow.gif)
-
 
 ## Practice time
 Now it's time for you to work alone! and create your first GET request.
 
 Make sure to run `npm install` to install the needed package to run the tests.
 
-### Requirments
-For this section you will be creating a GET request to the `/practice` endpoint, your server should return `Practice is done!` whenever `http://localhost:3000/practice` is visited.
+### Requirements
+1. Create a GET request on your Node.js server to the `/practice` endpoint.
+2. Your server should return the text `Practice is done!` on visiting `http://localhost:3000/practice` on the browser.
+### Submission
+1. Run `npm install` on the terminal to install the packages required to run submission tests.
+2. Run `npm test` to verify your code before submission.
 
 ## References
 - [Node.js getting started](https://nodejs.org/en/docs/guides/getting-started-guide/)
