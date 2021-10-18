@@ -4,7 +4,7 @@
   "description": "Getting Started with Node.js",
   "main": "app.js",
   "scripts": {
-    "test": "mocha ./tests",
+    "test": "mocha --exit ./tests",
     "start": "node app.js"
   },
   "repository": {
